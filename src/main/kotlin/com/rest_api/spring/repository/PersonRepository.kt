@@ -1,6 +1,6 @@
-package repository
+package com.rest_api.spring.repository
 
-import model.Person
+import com.rest_api.spring.model.Person
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

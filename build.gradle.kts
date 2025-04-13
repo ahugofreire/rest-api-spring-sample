@@ -25,8 +25,10 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-	implementation("mysql:mysql-connector-java:8.0.14")
-
+	implementation("mysql:mysql-connector-java:8.0.28")
+//	implementation("com.mysql.mysql-connector-j")
+	implementation("com.github.dozermapper:dozer-core:7.0.0")
+	implementation("org.modelmapper:modelmapper:3.0.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")

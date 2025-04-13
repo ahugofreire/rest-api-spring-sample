@@ -1,4 +1,4 @@
-package exceptions
+package com.rest_api.spring.exceptions
 
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.ResponseStatus

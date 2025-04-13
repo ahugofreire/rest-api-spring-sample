@@ -1,4 +1,4 @@
-package converters
+package com.rest_api.spring.converters
 
 object NumberConverter  {
 

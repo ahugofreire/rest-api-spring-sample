@@ -1,4 +1,4 @@
-package model
+package com.rest_api.spring.model
 
 import jakarta.persistence.*
 

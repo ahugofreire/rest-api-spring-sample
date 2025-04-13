@@ -1,4 +1,4 @@
-package math
+package com.rest_api.spring.math
 
 import kotlin.math.sqrt
 import kotlin.time.Duration

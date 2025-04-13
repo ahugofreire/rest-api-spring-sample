@@ -1,8 +1,8 @@
-package controller
+package com.rest_api.spring.controller
 
-import converters.NumberConverter
-import exceptions.UnsupportedMathOperationException
-import math.SimpleMath
+import com.rest_api.spring.converters.NumberConverter
+import com.rest_api.spring.exceptions.UnsupportedMathOperationException
+import com.rest_api.spring.math.SimpleMath
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

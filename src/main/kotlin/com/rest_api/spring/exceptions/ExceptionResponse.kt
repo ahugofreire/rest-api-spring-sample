@@ -1,4 +1,4 @@
-package exceptions
+package com.rest_api.spring.exceptions
 
 import java.util.Date
 
