@@ -29,6 +29,11 @@ dependencies {
 //	implementation("com.mysql.mysql-connector-j")
 	implementation("com.github.dozermapper:dozer-core:7.0.0")
 	implementation("org.modelmapper:modelmapper:3.0.0")
+	implementation("org.flywaydb:flyway-core")
+	implementation("org.flywaydb:flyway-mysql")
+	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
+	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")

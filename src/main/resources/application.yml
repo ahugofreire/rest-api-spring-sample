@@ -9,5 +9,8 @@
     jpa:
       open-in-view: false
       hibernate:
-        ddl-auto: update
+        ddl-auto: none
       show-sql: false
+    flyway:
+      baselineOnMigrate: true
+      locations: classpath:db/migration
