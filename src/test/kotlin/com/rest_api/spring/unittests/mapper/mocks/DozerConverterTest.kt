@@ -18,7 +18,7 @@ class DozerConverterTest {
     @Test
     fun parseEntityToVOTest() {
         val output: PersonVO = DozerMapper.parseObject(inputObject!!.mockEntity(), PersonVO::class.java)
-        assertEquals(0, output.id)
+        assertEquals(0, output.key)
         assertEquals("First Name Test0", output.firstName)
         assertEquals("Last Name Test0", output.lastName)
         assertEquals("Address Test0", output.address)
@@ -31,14 +31,14 @@ class DozerConverterTest {
             DozerMapper.parseListObject(inputObject!!.mockEntityList(), PersonVO::class.java)
 
         val outputZero: PersonVO = outputList[0]
-        assertEquals(0, outputZero.id)
+        assertEquals(0, outputZero.key)
         assertEquals("First Name Test0", outputZero.firstName)
         assertEquals("Last Name Test0", outputZero.lastName)
         assertEquals("Address Test0", outputZero.address)
         assertEquals("Male", outputZero.gender)
 
         val outputSeven: PersonVO = outputList[7]
-        assertEquals(7.toLong(), outputSeven.id)
+        assertEquals(7.toLong(), outputSeven.key)
         assertEquals("First Name Test7", outputSeven.firstName)
         assertEquals("Last Name Test7", outputSeven.lastName)
         assertEquals("Address Test7", outputSeven.address)

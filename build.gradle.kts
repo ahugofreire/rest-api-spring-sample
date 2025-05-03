@@ -22,6 +22,8 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.hateoas:spring-hateoas")
+
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
@@ -33,11 +35,15 @@ dependencies {
 	implementation("org.flywaydb:flyway-mysql")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.6")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	testImplementation("com.h2database:h2:2.1.214")
+	testImplementation("org.mockito:mockito-core")
+
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
 }
 
 kotlin {
